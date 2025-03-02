@@ -1,0 +1,5 @@
+<ul>
+    <li *ngFor = "let album of album">
+        <a [routerLink]="['/posts', album.id]">{{album.id}} - {{album.title}}</a>
+    </li>
+</ul>
